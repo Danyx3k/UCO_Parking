@@ -1,4 +1,4 @@
-package co.edu.uco.ucoparking.initializer.features.student.registernewstudent.application.inputport.to.Impl;
+package co.edu.uco.ucoparking.initializer.features.student.registernewstudent.application.inputport.to.impl;
 
 
 import co.edu.uco.ucoparking.initializer.features.student.registernewstudent.application.inputport.RegisterNewStudentInputPort;
