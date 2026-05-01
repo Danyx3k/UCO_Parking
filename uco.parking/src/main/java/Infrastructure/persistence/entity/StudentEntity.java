@@ -13,11 +13,11 @@ public class StudentEntity {
     private UUID id;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @Column(name = "AcademicProgram", nullable = false)
+    @JoinColumn(name = "AcademicProgram", nullable = false)
     private AcademicProgramEntity academicProgramEntity;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @Column(name = "IdType", nullable = false)
+    @JoinColumn(name = "IdType", nullable = false)
     private IdTypeEntity idTypeEntity;
 
     @Column(name = "Name")
