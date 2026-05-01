@@ -1,11 +1,11 @@
 package co.edu.uco.ucoparking.initializer.features.student.registernewstudent.application.usecase.Impl;
 
 import co.edu.uco.ucoparking.initializer.features.student.registernewstudent.application.usecase.RegisterNewStudentDomain;
-import co.edu.uco.ucoparking.initializer.features.student.registernewstudent.application.usecase.domain.RegistrarNewStudentUseCase;
+import co.edu.uco.ucoparking.initializer.features.student.registernewstudent.application.usecase.domain.RegisterNewStudentUseCase;
 import org.springframework.stereotype.Service;
 
 @Service //caso de uso//<<--Hace parte de la capa del negocio//
-public class RegisterNewStudentUseCaseImpl implements RegistrarNewStudentUseCase {
+public class RegisterNewStudentUseCaseImpl implements RegisterNewStudentUseCase {
 
     @Override
     public void execute(RegisterNewStudentDomain data) {
