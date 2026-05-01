@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 public class RegisterNewStudentUseCaseImpl implements RegisterNewStudentUseCase {
 
     @Override
-    public void execute(RegisterNewStudentDomain data) {
+    public Void execute(RegisterNewStudentDomain data) {
         return null;
     }
 }
