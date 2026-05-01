@@ -32,6 +32,59 @@ public class StudentEntity {
     @Column(name = "MobileNumber")
     private String mobileNumber;
 
+    public UUID getId() {
+        return id;
+    }
 
+    public AcademicProgramEntity getAcademicProgramEntity() {
+        return academicProgramEntity;
+    }
 
+    public IdTypeEntity getIdTypeEntity() {
+        return idTypeEntity;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public String geteMail() {
+        return eMail;
+    }
+
+    public String getMobileNumber() {
+        return mobileNumber;
+    }
+
+    private void setId(UUID id) {
+        this.id = id;
+    }
+
+    private void setAcademicProgramEntity(AcademicProgramEntity academicProgramEntity) {
+        this.academicProgramEntity = academicProgramEntity;
+    }
+
+    private void setIdTypeEntity(IdTypeEntity idTypeEntity) {
+        this.idTypeEntity = idTypeEntity;
+    }
+
+    private void setName(String name) {
+        this.name = name;
+    }
+
+    private void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    private void seteMail(String eMail) {
+        this.eMail = eMail;
+    }
+
+    private void setMobileNumber(String mobileNumber) {
+        this.mobileNumber = mobileNumber;
+    }
 }
