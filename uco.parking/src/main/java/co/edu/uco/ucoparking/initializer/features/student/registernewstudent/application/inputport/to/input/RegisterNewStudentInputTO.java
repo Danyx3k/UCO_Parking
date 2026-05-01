@@ -6,6 +6,8 @@ public class RegisterNewStudentInputTO {
     private UUID id;
     private UUID academicProgram;
     private UUID idType;
+    private String name;
+    private String lastName;
     private String idNumber;
     private String email;
     private String mobileNumber;
@@ -21,6 +23,14 @@ public class RegisterNewStudentInputTO {
 
     public UUID getIdType() {
         return idType;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getLastName() {
+        return lastName;
     }
 
     public String getIdNumber() {
@@ -45,6 +55,14 @@ public class RegisterNewStudentInputTO {
 
     public void setIdType(UUID idType) {
         this.idType = idType;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     public void setIdNumber(String idNumber) {

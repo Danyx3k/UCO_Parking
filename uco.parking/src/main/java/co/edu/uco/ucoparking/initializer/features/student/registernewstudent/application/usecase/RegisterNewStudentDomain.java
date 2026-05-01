@@ -6,15 +6,19 @@ public class RegisterNewStudentDomain {
     private UUID id;
     private UUID academicProgram;
     private UUID idType;
+    private String name;
+    private String lastName;
     private String idNumber;
     private String email;
     private String mobileNumber;
 
-    public RegisterNewStudentDomain(UUID id, UUID academicProgram, UUID idType, String idNumber, String email, String mobileNumber) {
+    public RegisterNewStudentDomain(UUID id, UUID academicProgram, UUID idType, String name, String lastName, String idNumber, String email, String mobileNumber) {
         super();
         generateId();
         setAcademicProgram(academicProgram);
         setIdType(idType);
+        setName(name);
+        setLastName(lastName);
         setIdNumber(idNumber);
         setEmail(email);
         setMobileNumber(mobileNumber);
@@ -42,6 +46,14 @@ public class RegisterNewStudentDomain {
         return idType;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
     public String getIdNumber() {
         return idNumber;
     }
@@ -64,6 +76,14 @@ public class RegisterNewStudentDomain {
 
     private void setIdType(UUID idType) {
         this.idType = idType;
+    }
+
+    private void setName(String name) {
+        this.name = name;
+    }
+
+    private void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     private void setIdNumber(String idNumber) {
