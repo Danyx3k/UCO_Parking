@@ -8,3 +8,6 @@ target/
 application-local.properties
 logs/
 *.log 
+.idea/
+*.iml
+untitled/
